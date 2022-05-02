@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twinkle Chit Chat</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="background_video">
+        <source src="videos/background_video.mp4" type="video/mp4">
+    </video>
+
+    <div class="buttons">
+        <button onclick="create_galaxy()" class="btns btn-1 ripple"><a href="#">Create Your Galaxy</a></button>
+        <button onclick="Login_galaxy()" class="btns btn-2 ripple"><a href="#">Log In</a></button>
+    </div>
+
+    <!-- Greetings -->
+    <div class="greetings_content">
+        <h1 class="ml2">Welcome To the Twinkle's Universe. Make your own galaxy now.
+        </h1>
+
+    </div>
+
+
+    <!-- Create Galaxy Dialog  -->
+    <div class="maincontent">
+        <span class="cross" onclick="exit_dialog()">X</span>
+        <div class="contents">
+            <h3>Create Your Galaxy</h3>
+            <hr>
+
+            <input type="text" id="name" name="name" placeholder="Full Name">
+            <input type="email" id="email" name="email" placeholder="E-mail">
+            <input type="password" id="password" name="password" placeholder="New Password">
+            <input type="password" id="re-password" name="re-password" placeholder="Confirm Password">
+            <br>
+            <button class="btns ripple">Create Now</button>
+        </div>
+
+    </div>
+
+
+    <!-- Create Login Dialog  -->
+    <div class="maincontent2">
+        <span class="cross" onclick="exit_dialog()">X</span>
+        <div class="contents">
+            <h3>Dive Into Your Galaxy</h3>
+            <hr>
+            <input type="email" id="email" name="email" placeholder="E-mail">
+            <input type="password" id="password" name="password" placeholder="New Password">
+            <br>
+            <button class="btns ripple">Log In</button>
+        </div>
+
+    </div>
+
+    
+    <code>©_Copyright_2022_Sakibur_Rahman_Saikat. All right reserved.</code>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="JSFiles/texteffect1.js"></script>
+    <script src="JSFiles/homepage.js"></script>
+
+</body>
+
+</html>
